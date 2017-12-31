@@ -1,13 +1,20 @@
-:: echo off
-:: test
-py.test --nbval py/Grocery_Sales_Forecasting.ipynb
+:try
+echo This is a try for the batch function.
+exit /B 0
 
-:: install
-:: cd C:\Users\yiqin\myenv
-::.\Scripts\activate 
-::pip install -r requirement.txt
+:test
+:: py.test --nbval py/Grocery_Sales_Forecasting.ipynb
+py.test --nbval-lax py/*.ipynb
+exit /B 0
 
-echo Test file executed.
-echo I am too lazy to write commands again and again.
+::lint
+::pylint --disable=R,C py
+::exit /B 0
+
+:install
+cd C:\Users\yiqin\myenv
+.\Scripts\activate 
+pip install -r requirement.txt
+exit /B 0
 
 pause
