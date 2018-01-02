@@ -4,4 +4,4 @@
 3.  A basic Data Visualization using Seaborn or Plotly library or Matplotlib
 4.  Some type of Machine Learning technique on the data
 5.  A script or Makefile that runs https://github.com/computationalmodelling/nbval (Links to an external site.), and tests the notebook. Please include output that shows it passes. <br />
-https://user-images.githubusercontent.com/28268570/34479153-d382ad88-ef59-11e7-8a5c-7a8816c85d81.jpg
+![test_screenshot](https://user-images.githubusercontent.com/28268570/34479153-d382ad88-ef59-11e7-8a5c-7a8816c85d81.jpg)
